@@ -1,0 +1,13 @@
+// all sass files are combined here 
+
+@import "variables";
+@import '~antd/dist/antd.css';
+@import "~bootstrap/scss/bootstrap";
+@import "mixins";
+@import "fonts";
+@import "global";
+
+@import '../../components/index.scss';
+@import '../../pages/index.scss';
+
+

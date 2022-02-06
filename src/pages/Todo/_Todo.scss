@@ -1,0 +1,177 @@
+.todos-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+        
+    .first-container {
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        width: 370px;
+        padding: 20px; 
+        box-shadow: inset -6px 0 9px -7px rgba(0,0,0,0.1);
+        
+        > img {
+            width: 100%;
+        }
+
+        .today-info {
+            background-color: $light-gray;
+            width: 100%;
+            border-radius: 10px;
+            padding: 20px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            margin: 30px 0px 30px 0px;
+
+            h3 {
+                @include FontAxi(32,1,$secondary);
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                @include FontAxi(30,2,$secondary);
+            }
+        }
+
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-start;
+        padding: 15px;
+
+        .stats-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        
+            .statistics-container {
+                border-radius: 10px;
+                padding: 18px 25px;
+                background-color: $red;
+                min-width: 270px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                position: relative;
+
+                &.green {
+                    background-color: $green;
+                }
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    @include FontAxi(17,2,$white);
+                    .icon {
+                        > svg {
+                        width: 26px;
+                        height: 26px;
+                        }
+                    }
+                }
+
+                h3 {
+                    @include FontAxi(35,2,$white);
+                }
+
+                .mask {
+                    position: absolute;
+                    right: 0px;
+                    top: -3px;
+                    width: 231px;
+                    
+                }
+            }
+
+        }
+
+        .tasks-wrapper {
+            display: flex;
+            flex: 1;
+            width: 100%;
+            gap: 20px;
+            padding: 30px 15px 15px 15px ;
+            border-top: 0.2px solid $light-gray;
+            margin-top: 20px;
+            position: relative;
+
+            .tasks-container {
+                display: flex;
+                width: 100%;
+                background-color: $white;
+                flex-direction: column;
+                padding: 10px;
+                border-radius: 10px;
+                gap: 5px;
+
+                &.grey {
+                    background-color: $light-gray;
+                }
+
+                span {
+                    @include FontAxi(16,1,$secondary);
+                }
+
+                .task {
+                    display: flex;
+                    width: 100%;
+                    padding: 15px;
+                    flex-direction: column;
+                    gap: 10px;
+                    background-color: $white;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    &:hover, &.active {
+                        background-color: $primary;
+                        span {
+                            color: $white;
+                        }
+                        > div {
+                            span {
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    span {
+                        @include FontAxi(14,2,$secondary);
+                    }
+
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        > img {
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 5px;
+                        }
+                        span {
+                            @include FontAxi(10,1,$secondary);
+                        }
+                    }
+                }
+
+            }
+
+            .more-icon {
+                position: absolute;
+                right: 10px;
+                top: 20px;
+                cursor: pointer;
+                width: 23px;
+            }
+            
+        }
+
+
+
+    }
+
+}

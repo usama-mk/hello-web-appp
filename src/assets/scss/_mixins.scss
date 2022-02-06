@@ -1,0 +1,34 @@
+@mixin FontAxi($var1,
+$var2,
+$var3) {
+    font-size: $var1 + px;
+    color:  $var3;
+    @if ($var2==1) {
+        font-family: 'Proxima Nova Regular';
+    }
+
+    @else if ($var2==2) {
+        font-family: 'Proxima Nova Bold';
+    }
+}
+
+@mixin BorRadius($var) {
+  border-radius: $var+px;
+  -webkit-border-radius: $var+px;
+  -moz-border-radius: $var+px;
+  -ms-border-radius: $var+px;
+  -o-border-radius: $var+px;
+}
+@mixin Tran($time) {
+  transition: $time all linear;
+  -webkit-transition: $time all linear;
+  -moz-transition: $time all linear;
+  -ms-transition: $time all linear;
+  -o-transition: $time all linear;
+}
+
+@mixin OneLineOnly() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

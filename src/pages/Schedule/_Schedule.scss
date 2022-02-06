@@ -1,0 +1,26 @@
+.calendar-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+        
+    .first-container {
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        width: 370px;
+        padding: 20px; 
+        box-shadow: inset -6px 0 9px -7px rgba(0,0,0,0.1);
+
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: flex-start;
+        padding: 15px;
+
+
+    }
+
+}

@@ -1,0 +1,40 @@
+.todo-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .toggler {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        overflow:hidden;
+        > div {
+            border: 1px solid $gray;
+            padding: 5px 8px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            .anticon {
+                
+                svg {
+                    color: $gray;
+                }
+            }
+
+            &.active {
+                border-color: $primary;
+                .anticon {
+                
+                    svg {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

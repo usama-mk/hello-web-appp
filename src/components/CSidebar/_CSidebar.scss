@@ -1,0 +1,63 @@
+.c-sidebar {
+    width: 80px;
+    height: 100vh;
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px;
+    z-index: 2;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    .logo {
+        width: 60px; 
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px 0px;
+            opacity: 0.5;
+            @include Tran(0.2s);
+
+            .anticon {
+                svg {
+                    width: 35px;
+                }
+            }
+            &.active {
+                border-left: 3px solid $white;
+               opacity: 1;
+               .title {
+                @include FontAxi(14,2,$white);
+               }
+             }
+            &:hover {
+               opacity: 1;
+               .title {
+                @include FontAxi(14,2,$white);
+               }
+             }
+
+             .title {
+                 margin-top: 0px;
+                 @include FontAxi(14,1,$white);
+             }
+        }
+            
+            
+    } 
+}

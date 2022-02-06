@@ -1,0 +1,167 @@
+.meetings-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+        
+    .first-container {
+        display: flex;  
+        flex-direction: column;
+        width: 50%;
+        padding: 20px 30px; 
+        box-shadow: inset -6px 0 9px -7px rgba(0,0,0,0.1);
+        position: relative;
+        
+        > span {
+            @include FontAxi(15,2,$secondary);
+        }
+
+        .no-record {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            flex: 1;
+            width: 100%;
+            justify-content: center;
+            gap: 13px;
+            >img {
+
+                width: 40px;
+            }
+            span {
+                @include FontAxi(13,1,$secondary);
+            }
+        }
+
+        .meeting-icon {
+            width: 27px;
+            position: absolute;
+            left: 50px;
+            bottom: 10px;
+            cursor: pointer;
+        }
+
+
+    }
+
+    .second-container {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        padding: 20px 30px; 
+
+        > span {
+            @include FontAxi(15,2,$secondary);
+            margin-bottom: 30px;
+
+            &.msg {
+                @include FontAxi(20,1,$secondary);
+            }
+        }
+
+       .actions-container {
+           display: flex;
+           gap: 30px;
+           padding-bottom: 30px;
+
+           .action {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               gap: 5px;
+               cursor: pointer;
+
+               img {
+                   width: 60px;
+               }
+
+               span {
+                   @include FontAxi(13,1,$gray);
+               }
+
+           }
+
+       }
+
+       .my-meetings-container {
+           display: flex;
+           flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            width: 100%;
+            gap: 30px;
+            border-top: 0.2px solid $light-gray;
+            
+           span {
+            @include FontAxi(15,2,$secondary);
+           }
+
+           >div {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               gap: 15px;
+
+               span {
+                @include FontAxi(18,1,$secondary);
+               }
+           }
+
+           button {
+            max-width: 330px;
+           }
+
+       }
+
+    }
+}
+
+.schedule-meeting {
+    display: flex;
+    flex-direction: column;
+    padding:10px 0px;
+    
+    .ant-form-item {
+        margin-bottom: 15px;
+    }
+
+    > span {
+        @include FontAxi(18,2,$secondary);
+        margin-bottom: 10px;
+    }
+
+    label {
+        @include FontAxi(13,1,$gray);
+
+    }
+
+    .field-wrapper {
+        border: 0.2px solid $light-gray;
+        padding: 15px 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &:last-of-type {
+            margin-bottom: 0px;
+        }
+        >div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            img {
+                width: 20px;
+            }
+            span {
+                @include FontAxi(13,1,$secondary);
+            }
+
+        }
+    }
+
+
+}

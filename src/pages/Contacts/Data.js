@@ -1,0 +1,8 @@
+export const contacts = [
+    {id:1,imgSrc: require('../../assets/images/sampleUser3.png').default, userName: 'Jimmy Chamber', title: 'Production Manager', company:'Spring Technologies Co Ltd', mobile:'0766222222', email: 'Email: Jessica@springtechnologies.net'},
+    {id:2,imgSrc: require('../../assets/images/sampleUser1.png').default, userName: 'Jessica Rily', title: 'Production Manager', company:'Spring Technologies Co Ltd', mobile:'0766222222', email: 'Email: Jessica@springtechnologies.net'},
+    {id:3,imgSrc: require('../../assets/images/sampleUser3.png').default, userName: 'Laila Page', title: 'Production Manager', company:'Spring Technologies Co Ltd', mobile:'0766222222', email: 'Email: Jessica@springtechnologies.net'},
+    {id:4,imgSrc: require('../../assets/images/sampleUser.png').default, userName: 'James Dunn', title: 'Production Manager', company:'Spring Technologies Co Ltd', mobile:'0766222222', email: 'Email: Jessica@springtechnologies.net'},
+    {id:5,imgSrc: require('../../assets/images/sampleUser2.png').default, userName: 'Jeremy Myres', title: 'Production Manager', company:'Spring Technologies Co Ltd', mobile:'0766222222', email: 'Email: Jessica@springtechnologies.net'},
+    {id:6,imgSrc: require('../../assets/images/sampleUser3.png').default, userName: 'Jimmy Chamber', title: 'Production Manager', company:'Spring Technologies Co Ltd', mobile:'0766222222', email: 'Email: Jessica@springtechnologies.net'},
+]
